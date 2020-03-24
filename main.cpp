@@ -124,6 +124,15 @@ private:
 int main() {
   Database db;
   string command;
+  cout << "Enter command by format:" << endl;
+  cout << "Add [date] [event]" << endl;
+  cout << "Del [date] [event]" << endl;
+  cout << "Del [date]" << endl;
+  cout << "Find [date]" << endl;
+  cout << "Print [date]" << endl;
+  cout << "For example:" << endl;
+  cout << "Add 2020-1-1 NewYear2020" << endl;
+  cout << "For exit enter Ctrl+C" << endl;
   while (getline(cin, command)) {
     stringstream stream_str(command);
     string operation_code;
